@@ -1,5 +1,5 @@
 {
-  "name": "@ecom/common",
+  "name": "ecom-common",
   "version": "1.0.0",
   "description": "common services for ecom application",
   "types": "dist/types",
