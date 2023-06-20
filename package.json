@@ -1,0 +1,10 @@
+{
+  "name": "@ecom/common",
+  "version": "1.0.0",
+  "description": "common services for ecom application",
+  "main": "dist/index.js",
+  "repository": "https://github.com/junaidofficialnow/ecom-common",
+  "author": "Junaid <junaidofficialnow@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
