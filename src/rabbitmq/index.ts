@@ -3,6 +3,7 @@ import { RabbitMQConfig } from "./config.base";
 import { RabConsumer } from "./listener.base";
 import { RabPublisher } from "./publisher.base";
 import { RoutingKeys } from "./routingKeys";
+import { Queues } from "./queues";
 
 export {
   RabConsumer,
@@ -10,6 +11,5 @@ export {
   RabbitMQConfig,
   Exchanges,
   RoutingKeys,
-  
-
+  Queues
 }
