@@ -6,5 +6,11 @@
   "repository": "https://github.com/junaidofficialnow/ecom-common",
   "author": "Junaid <junaidofficialnow@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.1"
+  }
 }
