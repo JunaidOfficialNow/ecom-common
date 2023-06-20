@@ -2,15 +2,19 @@
   "name": "@ecom/common",
   "version": "1.0.0",
   "description": "common services for ecom application",
+  "types": "dist/types",
   "main": "dist/index.js",
   "repository": "https://github.com/junaidofficialnow/ecom-common",
   "author": "Junaid <junaidofficialnow@gmail.com>",
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "amqplib": "^0.10.3"
+    "amqplib": "^0.10.3",
+    "jsonwebtoken": "^9.0.0"
   },
   "devDependencies": {
-    "@types/amqplib": "^0.10.1"
+    "@types/amqplib": "^0.10.1",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2"
   }
 }
