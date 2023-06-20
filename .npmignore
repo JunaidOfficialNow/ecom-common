@@ -5,5 +5,3 @@ src/
 node_modules/
 .gitignore
 tsconfig.json
-package
-docs/
