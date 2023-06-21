@@ -12,7 +12,7 @@ export abstract class RabPublisher {
       if (!this.options) {
         this.options = {persistent: true};
       }
-      const strData = String(data);
+      const strData = JSON.stringify(data);
       this.channel.publish(this.exchange, this.routingKey, Buffer.from(strData), this.options );
       console.log(`${this.exchange}, ${this.routingKey} published`);
     } catch (error) {
