@@ -1,8 +1,8 @@
 import { Channel, ConsumeMessage} from "amqplib";
 
-export abstract class RabConsumer<T> {
+export abstract class RabConsumer {
   protected abstract queueName: string;
-  abstract onMessage(data: T, msg: ConsumeMessage): Promise<void>;
+  abstract onMessage(data: any, msg: ConsumeMessage): Promise<void>;
 
   constructor(private channel: Channel) {}
 

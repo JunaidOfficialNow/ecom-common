@@ -1,13 +1,13 @@
 import { Channel } from "amqplib";
 
-export abstract class RabPublisher<T> {
+export abstract class RabPublisher {
   protected abstract exchange: string;
   protected abstract routingKey: string;
   protected abstract options: Object | undefined;
 
   constructor(private channel: Channel) {}
   
-  publish(data: T ) {
+  publish(data: any ) {
     try {
       if (!this.options) {
         this.options = {persistent: true};
