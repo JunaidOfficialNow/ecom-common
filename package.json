@@ -1,6 +1,6 @@
 {
   "name": "ecom-common",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "common services for ecom application",
   "types": "dist/types",
   "main": "dist/index.js",
