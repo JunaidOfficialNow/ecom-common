@@ -4,7 +4,7 @@ export abstract class RabConsumer {
   protected abstract queueName: string;
   abstract onMessage(data: any, msg: ConsumeMessage): Promise<void>;
 
-  constructor(private channel: Channel) {}
+  constructor(protected channel: Channel) {}
 
   consume() {
     try {
