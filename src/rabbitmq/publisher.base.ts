@@ -12,7 +12,8 @@ export abstract class RabPublisher<T> {
       if (!this.options) {
         this.options = {persistent: true};
       }
-      this.channel.publish(this.exchange, this.routingKey, Buffer.from(data as string), this.options );
+      const strData = String(data);
+      this.channel.publish(this.exchange, this.routingKey, Buffer.from(strData), this.options );
       console.log(`${this.exchange}, ${this.routingKey} published`);
     } catch (error) {
       console.log('Error while publishing event');
