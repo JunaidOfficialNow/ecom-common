@@ -1,7 +1,7 @@
 import amqp , {Channel, Connection} from'amqplib';
 
 export abstract class RabbitMQConfig {
- abstract readonly RabUrl: string;
+ abstract RabUrl: string;
  protected _channel: Channel | undefined;
  protected connection: Connection | undefined;
 
