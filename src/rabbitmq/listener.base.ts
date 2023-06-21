@@ -10,10 +10,9 @@ export abstract class RabConsumer {
     try {
       this.channel.consume(this.queueName, async (msg: ConsumeMessage | null) => {
         if (msg) {
-          this.channel.ack(msg);
           const data = JSON.parse(msg.content.toString());
           console.log("Event received");
-          // await this.onMessage(data, msg);
+          await this.onMessage(data, msg);
         }
      })
     } catch (error) {
