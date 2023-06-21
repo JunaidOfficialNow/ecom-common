@@ -16,7 +16,6 @@ export abstract class RabbitMQConfig {
 
  async initialize() {
   try {
-    console.log(this.RabUrl);
     if (!this.RabUrl) {
       throw new Error('RabUrl is required');
     }
